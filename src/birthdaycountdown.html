@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Dancing+Script:wght@700&family=Rubik+Pixels&family=Sigmar&display=swap" rel="stylesheet">
+</head>
+<body class="" style="background: #23C9CF;
+background: linear-gradient(to left, #23C9CF 8%, #29FF70 26%, #C689CF 41%);">
+    <main class="h-screen flex flex-col items-center justify-center">
+        <h1 class="font-bold uppercase text-[25px] md:text-[40px]" style="background: #25CC0F;
+        background: linear-gradient(to bottom right, #25CC0F 0%, #9E3212 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Rubik Pixels', cursive;
+        ">countdown to my birthday</h1>
+        <h2 class="animate-[ping_3s_ease-in-out_infinite] text-[25px] md:text-[50px] md:pb-10" style="font-family: 'Rubik Pixels', cursive;">2024</h2>
+        <div class="flex gap-10 md:text-[50px] text-gray-200" style="font-family: 'Dancing Script', cursive;">
+            <div class="flex flex-col">
+                <span id="day" class="flex justify-center items-center" style="font-family: 'Sigmar', cursive; font-size: 4rem;">30</span>
+                <span class="flex justify-center items-center" style="font-family: 'Bruno Ace SC', cursive; background: #FCEABB;
+                background: linear-gradient(to right, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                ;">Days</span>
+            </div>
+            <div class="flex flex-col">
+                <span id="hr" class="flex justify-center items-center" style="font-family: 'Sigmar', cursive; font-size: 4rem;">30</span>
+                <span class="flex justify-center items-center" style="font-family: 'Bruno Ace SC', cursive; background: #FCEABB;
+                background: linear-gradient(to right, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                ;">Hours</span>
+            </div>
+            <div class="flex flex-col">
+                <span id="min" class="flex justify-center items-center" style="font-family: 'Sigmar', cursive; font-size: 4rem;">30</span>
+                <span class="flex justify-center items-center" style="font-family: 'Bruno Ace SC', cursive; background: #FCEABB;
+                background: linear-gradient(to right, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                ;">Minutes</span>
+            </div>
+            <div class="flex flex-col">
+                <span id="sec" class="flex justify-center items-center" style="font-family: 'Sigmar', cursive; font-size: 4rem;">30</span>
+                <span class="flex justify-center items-center" style="font-family: 'Bruno Ace SC', cursive; background: #FCEABB;
+                background: linear-gradient(to right, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                ;">Seconds</span>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+         const days = document.getElementById('day')
+         const hours = document.getElementById('hr')
+         const minutes = document.getElementById('min')
+         const seconds = document.getElementById('sec')
+         const bday = new Date('Mar 08 2024 00:00:00').getTime()
+
+         function nextBD(){
+            const now = new Date().getTime()
+            const diff = bday - now
+
+            const xs = 1000
+            const xm = xs * 60
+            const xh = xm * 60
+            const xd = xh * 24
+
+            const d = Math.floor(diff/xd)
+            const h = Math.floor((diff % xd) / xh)
+            const m = Math.floor((diff % xh) / xm)
+            const s = Math.floor((diff % xm) / xs)
+
+            days.textContent = d
+            hours.textContent = h
+            minutes.textContent = m
+            seconds.textContent = s
+
+            setTimeout(() => nextBD(), 100)
+         }
+
+         nextBD()
+    </script>
+</body>
+</html>

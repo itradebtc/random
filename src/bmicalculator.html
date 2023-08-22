@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="bmi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cutive+Mono&family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+</head>
+<body class="bg-contain md:bg-cover px-[50px] py-[100px]">
+    <main>
+        <div class="bg-red-800 h-[45vh] py-[100px] md:h-[70vh] md:py-[150px] text-white">
+            <h1 class="pl-3 md:pl-10 text-[3rem] md:text-[6rem]" style="font-family: 'Alfa Slab One', cursive;">BMI</h1>
+            <h2 class="pl-3 md:pl-10 text-[o.5rem] md:text-[2rem] text-left" style="font-family: 'Cutive Mono', monospace;">body mass index</h2>
+        </div>
+        <div class="bmi">
+            <ul class="m-[5vh] md:pr-48 md:m-[10vh] md:py-[15vh] space-y-14" style="font-family: 'Konkhmer Sleokchher', cursive;">
+                <li class="border-b-2 border-slate-400 pb-4 md:w-full">
+                    <label for="weight" class="text-xs uppercase">weight</label><br>
+                    <input class="text-3xl bg-inherit outline-none" type="number" name="weight" id="weight" placeholder="| weight in kgs" required>
+                </li>
+                <li class="border-b-2 border-slate-400 pb-4 md:w-full">
+                    <label for="height" class="text-xs uppercase">height</label><br>
+                    <input class="text-3xl bg-inherit outline-none" type="number" name="height" id="height" placeholder="| height in cms" required>
+                </li>
+                <p class="uppercase" style="font-family: 'Konkhmer Sleokchher', cursive;">
+                
+                </p>
+                    
+                <button id="btn" class="border bg-red-700 text-white uppercase py-4 px-4">
+                    check bmi
+                </button>
+                    
+            </ul>
+        </div>
+    
+    
+        <script>
+            const weight = document.getElementById('weight')
+            const height = document.getElementById('height')
+            const para = document.querySelector('p')
+            const btn = document.querySelector('button')
+    
+            function bmi(){
+                let w = weight.value
+                let h = height.value / 100
+                let status
+                const val = w / (h**2)
+                
+                if(val >= 30){
+                    status = 'obesity'
+                }
+    
+                else if(val >= 25){
+                    status = 'overweight'
+                }
+    
+                else if(val >= 18.5){
+                    status = 'normal weight'
+                }
+                
+                else{
+                    status = 'underweight'
+                }
+    
+                return para.textContent = `Your BMI = ${val.toFixed(2)} and you're ${status}`
+            }
+    
+            btn.addEventListener('click', bmi)
+    
+        </script>
+    </main>
+</body>
+</html>

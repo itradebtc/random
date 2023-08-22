@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelubia Urubusi</title>
+    <link rel="shortcut icon" href="/images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="icon.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap" rel="stylesheet">
+</head>
+<body class="h-screen mt-2 m-auto">
+    <div class="flex flex-row md:flex-row justify-between items-center py-5 px-6 md:py-5 md:px-20">
+        <div class="text-[25px] uppercase md:hover:animate-bounce md:cursor-pointer">
+            <p style="font-family: 'Rubik Pixels', cursive;">kelubia urubusi</p>
+        </div>
+        <span class="text-3xl text-black cursor-pointer mx-2 md:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+        <ul class="flex flex-col md:flex-row items-center bg-[#abbaab] md:bg-inherit md:space-x-12 md:flex md:items-center z-[0] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <li><a href="./projects.html" class="hover:text-[#fff] md:hover:text-[#abbaab] duration-500">All projects</a></li>
+            <li><a href="./aboutme.html" class="hover:text-[#fff] md:hover:text-[#abbaab] duration-500">About me</a></li>
+            <button class="border-2 border-black py-0 px-4 hover:text-[#fff] md:hover:text-[#abbaab] duration-500"><a href="./contact.html">Contact</a></button>   
+        </ul>
+    </div>
+
+    <main class="bg-gradient-to-r from-[#abbaab] to-[#ffffff] py-5 px-6 md:px-20 md:py-16">
+       <h1 class="flex space-x-6 text-[hsl(207,13%,34%)]">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+        </svg>Lagos, Nigeria
+       </h1>
+       <!-- Brief info about me -->
+       <section class="md:flex md:justify-around md:space-x-16">
+           <h2 class="py-5 md:py-16 text-[24px] md:text-[35px] uppercase md:text-left">
+            i am kelubia urubusi - a passionate frontend web developer with
+            experience in html, css, javascript and react.
+           </h2>
+    
+           <p class="text-[hsl(207,13%,34%)] text-[14px] md:pt-[145px] md:text-right">
+            Welcome to my professional portfolio. I love working on 
+            projects of any kind and I'm open to freelance work! Check
+            my work and feel free to contact me.
+           </p>
+       </section>
+       <section>
+        <img src="./images/kelubiaurubusi.jpg" alt="my-picture" class="w-full md:h-[5%]">   
+       </section>
+       <!-- section for achievement -->
+       <div class="pb-10 md:pb-2">
+        <div class="grid grid-cols-[200px,200px] grid-rows-[100px, 100px] pt-6 space-y-6 md:flex md:justify-around items-center md:py-16 md:px-12">
+            <div>
+                <p>100+</p>
+                <p>Projects</p>
+                <p>Completed</p>
+            </div>
+            <div>
+                <p>1+</p>
+                <p>Years of</p>
+                <p>Experience</p>
+            </div>
+            <div>
+                <p>2</p>
+                <p>Design</p>
+                <p>Awards</p>
+            </div>
+            <div>
+                <p>13</p>
+                <p>Satisfied</p>
+                <p>Client</p>
+            </div>
+        </div>
+       </div>
+       <!-- section for my client review -->
+       <div class="bg-slate-800 text-[25px] md:text-[38px] text-left md:space-x-[250px] text-white md:flex md:justify-between md:items-center py-9 px-9 md:py-14 md:px-16">
+        <img src="./images/clientpic.jpg" alt="clients-pic" class="border border-solid border-white rounded-full h-20 w-20 md:h-48 md:w-48 md:float-right">
+        <p>// <em class="text-[15px] md:text-[18px]">Client said...</em> <br> "We loved every moment working with Kelubia.
+            He has a great eye for detail and delivered exceptional designs for us
+            every time." <br> <b class="text-[12px] md:text-[15px]">- Kingsley Udoh, CEO of Travalá Voyage</b>
+        </p>
+       </div>
+       <!-- section for my work -->
+       <div class="pt-20">
+        <h3 class="border-t-2 border-black pt-14 pb-12">// My work</h3>
+        <div class="grid md:flex md:justify-between md:items-center md:gap-4">
+            <div class="h-[20rem] w-auto md:h-[35rem] md:w-[20rem] md:rounded-bl-[80px] md:rounded-tr-[80px] md:hover:animate-[pulse_3s_ease-in-out_infinite]" style="background: url('./images/html1.jpeg'); background-size: cover;">
+                <div class="grid justify-center items-center py-20 md:py-52 md:px-20 space-y-3">
+                    <img src="./images/html1.jpeg" alt="html" class="h-20 w-20 border border-solid border-black md:border-white rounded-full md:h-28 md:w-28">
+                    <button class="border rounded-none py-2 px-5 bg-white uppercase"><a href="">see more</a></button>
+                </div>
+            </div>
+            <div class="h-[20rem] w-auto md:h-[35rem] md:w-[20rem] md:rounded-bl-[80px] md:rounded-tr-[80px] md:hover:animate-[pulse_3s_ease-in-out_infinite]" style="background: url('./images/cssgif.gif'); background-size: cover;">
+                <div class="grid justify-center items-center py-20 md:py-52 md:px-20 space-y-3">
+                    <img src="./images/css2.png" alt="css" class="h-20 w-20 border border-solid border-black md:border-white rounded-full md:h-28 md:w-28">
+                    <button class="border rounded-none py-2 px-5 bg-white uppercase"><a href="">see more</a></button>
+                </div>
+            </div>
+            <div class="h-[20rem] w-auto md:h-[35rem] md:w-[20rem] md:rounded-bl-[80px] md:rounded-tr-[80px] md:hover:animate-[pulse_3s_ease-in-out_infinite]" style="background: url('./images/reactgif2.gif'); background-size: contain; background-position: center;">
+                <div class="grid justify-center items-center py-20 md:py-52 md:px-20 space-y-3">
+                    <img src="./images/js1.jpeg" alt="js" class="h-20 w-20 border border-solid border-black md:border-white rounded-full md:h-28 md:w-28">
+                    <button class="border rounded-none py-2 px-5 bg-white uppercase"><a href="">see more</a></button>
+                </div>
+            </div>
+            <div class="h-[20rem] w-auto md:h-[35rem] md:w-[20rem] md:rounded-bl-[80px] md:rounded-tr-[80px] md:hover:animate-[pulse_3s_ease-in-out_infinite]" style="background: url('./images/rjs.gif'); background-size: cover; background-position: center;">
+                <div class="grid justify-center items-center py-20 md:py-52 md:px-20 space-y-3">
+                    <img src="./images/react.png" alt="react" class="h-20 w-20 border border-solid border-black md:border-white rounded-full md:h-28 md:w-28">
+                    <button class="border rounded-none py-2 px-5 bg-white uppercase"><a href="">see more</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 px-28 md:pt-10 md:px-[500px]">
+            <button class="border border-solid border-b rounded-none pl-8 pr-8 md:py-2 md:px-5 bg-white uppercase"><a href="">see more projects</a></button>
+        </div>
+        <!-- contact area -->
+        <section class="bg-slate-800 text-white w-auto grid px">
+            <h3 class="pt-8 px-6 md:pt-16 md:px-24"><em>// Wanna work together?</em></h3>
+            <div class="pt-6 px-10 md:px-24 md:h-[30rem] md:pt-12 md:w-auto md:grid md:grid-cols-2 md:grid-rows-2 space-x-24">
+                <div class="h-[20rem] md:row-span-2">
+                    <form>
+                        <fieldset>
+                            <ul class="space-y-6 pb-6">
+                                <li>
+                                    <input class="bg-inherit outline-none" type="text" name="name" id="" placeholder="YOUR NAME *" required>
+                                </li>
+                                <li class="border-t md:border-t-2 border-white pt-5">
+                                    <input class="bg-inherit outline-none" type="email" name="email" id="" placeholder="YOUR EMAIL *" required>
+                                </li>
+                                <li class="border-t md:border-t-2 border-white pt-5">
+                                    <!-- <label for="services"></label> -->
+                                    <select class="bg-inherit">
+                                        <optgroup label="">
+                                            <option value="" class="">WHAT KIND OF SERVICE ARE YOU LOOKING FOR?</option>
+                                            <option value="html">html</option>
+                                            <option value="css">css</option>
+                                            <option value="vjs">vanilla javascript</option>
+                                            <option value="rjs">react js</option>
+                                        </optgroup>
+                                    </select>
+                                </li>
+                                <li class="border-t md:border-t-2 border-b md:border-b-2 border-white pt-5 pb-5">
+                                    <input class="bg-inherit outline-none" type="text" name="message" id="" placeholder="WRITE A MESSAGE...">
+                                </li>
+                            </ul>
+                            <button type="submit" class="border border-solid border-b rounded-none py-2 pl-8 pr-8 md:py-2 md:px-5 text-black bg-white w-full uppercase">send</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="pt-6 pb-3 md:pt-0 md:pb-0">
+                    <p>kelubia urubusi</p>
+                    <p>kelubiaurubusi@yahoo.com</p>
+                    <p>(+234) 708 663 9336</p>
+                </div>
+                <div class="md:pt-7">
+                    <p>Follow me on social media!</p>
+                    <div class="social-menu">
+                        <ul class="flex pt-20 pl-56 md:pt-16 md:pl-52">
+                            <li><a href="https://twitter.com/murubz" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://instagram.com/zaddy___1" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/kelubia-urubusi-91a483269/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+       </div>
+    </main>
+    <footer class="h-12 relative">
+        <p class="flex justify-center items-center pt-4">
+        &copy; Copyright 2023 Moment Icon
+        </p>
+    </footer>
+
+
+
+
+
+
+
+    <script>
+    function Menu(e){
+        let list = document.querySelector('ul');
+
+        e.name === 'menu' ? (e.name = "close",list.classList.
+        add('top-[80px]') , list.classList.add('opacity-100')
+        ) :( e.name = "menu" ,list.classList.remove('top-[80px]')
+        ,list.classList.remove('opacity-100'))
+    }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@800&display=swap" rel="stylesheet">
+</head>
+<body class="h-screen" style="background-size: 110px 110px;
+             background-position: 0px 0px,55px 55px;
+             background-image: radial-gradient(50% 50% at 50% 50%, transparent 0%, transparent 75%, #B6CC66 76%, #B6CC66 85%, #EDFFDB 86%, #EDFFDB 94%, #FFFFFF 95%, #FFFFFF 103%, #D9E6A7 104%, #D9E6A7 112%, #798B3C 113%, #798B3C 121%, #FFFFFF 122%, #FFFFFF 130%, #E0EAD7 131%, #E0EAD7 140%),
+                               radial-gradient(50% 50% at 50% 50%, #FFFFFFFF 0%, #FFFFFFFF 75%, #B6CC66 76%, #B6CC66 85%, #EDFFDB 86%, #EDFFDB 94%, #FFFFFF 95%, #FFFFFF 103%, #D9E6A7 104%, #D9E6A7 112%, #798B3C 113%, #798B3C 121%, #FFFFFF 122%, #FFFFFF 130%, #E0EAD7 131%, #E0EAD7 140%);">
+    
+    <main class="h-screen md:flex md:flex-col md:items-center justify-center text-[50px] md:text-[70px] text-yellow-800 px-14 py-[30vh] md:px-[300px]" style="font-family: 'Tourney', cursive;">
+        <h1 class="md:items-center justify-center text-emerald-700 text-[50px]" style="font-family: 'Tourney', cursive; font-size: 1em;">DIGITAL CLOCK</h1>
+        <div class="flex gap-4">
+            <div class="border border-solid md:rounded-tl-[30px] md:rounded-br-[30px] h-[100px] md:h-[170px] md:w-[300px] border-pink-950 border-y-4 border-x-4" style="background-size: 100% 100%;
+                        background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+                        background-image: radial-gradient(18% 28% at 24% 50%, #CEFAFFFF 7%, #073AFF00 100%),
+                                          radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),
+                                          radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, #073AFF00 100%),
+                                          radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),
+                                          radial-gradient(42% 53% at 34% 72%, #FFFFFFFF 7%, #073AFF00 100%),
+                                          radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),
+                                          radial-gradient(31% 43% at 7% 98%, #FFFFFFFF 24%, #073AFF00 100%),
+                                          radial-gradient(21% 37% at 72% 23%, #D3FF6D9C 24%, #073AFF00 100%),
+                                          radial-gradient(35% 56% at 91% 74%, #8A4FFFF5 9%, #073AFF00 100%),
+                                          radial-gradient(74% 86% at 67% 38%, #6DFFAEF5 24%, #073AFF00 100%),
+                                          linear-gradient(125deg, #4EB5FFFF 1%, #4C00FCFF 100%);">
+                <span id="hour" class="flex justify-center items-center pb-5">12</span>
+                <span class="flex justify-center items-center text-[15px] md:text-[20px] uppercase">hours</span>
+            </div>
+            <div class="border border-solid md:rounded-tl-[30px] md:rounded-br-[30px] h-[100px] md:h-[170px] md:w-[300px] border-pink-950 border-y-4 border-x-4" style="background-size: 100% 100%;
+            background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+            background-image: radial-gradient(18% 28% at 24% 50%, #CEFAFFFF 7%, #073AFF00 100%),
+                              radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),
+                              radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, #073AFF00 100%),
+                              radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),
+                              radial-gradient(42% 53% at 34% 72%, #FFFFFFFF 7%, #073AFF00 100%),
+                              radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),
+                              radial-gradient(31% 43% at 7% 98%, #FFFFFFFF 24%, #073AFF00 100%),
+                              radial-gradient(21% 37% at 72% 23%, #D3FF6D9C 24%, #073AFF00 100%),
+                              radial-gradient(35% 56% at 91% 74%, #8A4FFFF5 9%, #073AFF00 100%),
+                              radial-gradient(74% 86% at 67% 38%, #6DFFAEF5 24%, #073AFF00 100%),
+                              linear-gradient(125deg, #4EB5FFFF 1%, #4C00FCFF 100%);">
+                <span id="minute" class="flex justify-center items-center pb-5">51</span>
+                <span class="flex justify-center items-center text-[15px] md:text-[20px] uppercase">minutes</span>
+            </div>
+            <div class="border border-solid md:rounded-tl-[30px] md:rounded-br-[30px] h-[100px] md:h-[170px] md:w-[300px] border-pink-950 border-y-4 border-x-4" style="background-size: 100% 100%;
+            background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+            background-image: radial-gradient(18% 28% at 24% 50%, #CEFAFFFF 7%, #073AFF00 100%),
+                              radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),
+                              radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, #073AFF00 100%),
+                              radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),
+                              radial-gradient(42% 53% at 34% 72%, #FFFFFFFF 7%, #073AFF00 100%),
+                              radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),
+                              radial-gradient(31% 43% at 7% 98%, #FFFFFFFF 24%, #073AFF00 100%),
+                              radial-gradient(21% 37% at 72% 23%, #D3FF6D9C 24%, #073AFF00 100%),
+                              radial-gradient(35% 56% at 91% 74%, #8A4FFFF5 9%, #073AFF00 100%),
+                              radial-gradient(74% 86% at 67% 38%, #6DFFAEF5 24%, #073AFF00 100%),
+                              linear-gradient(125deg, #4EB5FFFF 1%, #4C00FCFF 100%);">
+                <span id="second" class="flex justify-center items-center pb-5">33</span>
+                <span class="flex justify-center items-center text-[15px] md:text-[20px] uppercase">seconds</span>
+            </div>
+            <div class="border border-solid md:rounded-tl-[30px] md:rounded-br-[30px] h-[100px] md:h-[170px] md:w-[300px] border-pink-950 border-y-4 border-x-4" style="background-size: 100% 100%;
+            background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+            background-image: radial-gradient(18% 28% at 24% 50%, #CEFAFFFF 7%, #073AFF00 100%),
+                              radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),
+                              radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, #073AFF00 100%),
+                              radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),
+                              radial-gradient(42% 53% at 34% 72%, #FFFFFFFF 7%, #073AFF00 100%),
+                              radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),
+                              radial-gradient(31% 43% at 7% 98%, #FFFFFFFF 24%, #073AFF00 100%),
+                              radial-gradient(21% 37% at 72% 23%, #D3FF6D9C 24%, #073AFF00 100%),
+                              radial-gradient(35% 56% at 91% 74%, #8A4FFFF5 9%, #073AFF00 100%),
+                              radial-gradient(74% 86% at 67% 38%, #6DFFAEF5 24%, #073AFF00 100%),
+                              linear-gradient(125deg, #4EB5FFFF 1%, #4C00FCFF 100%);">
+                <span id="millisec" class="flex justify-center items-center pb-5"></span>
+                <span class="flex justify-center items-center text-[15px] md:text-[20px] uppercase">milliseconds</span>
+            </div>
+            <span id="time" class="text-yellow-800 text-[35px] md:text-[70px] mt-14 border border-solid md:rounded-tl-[30px] md:rounded-br-[30px] border-pink-950 border-y-4 border-x-4" style="background-size: 100% 100%;
+            background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+            background-image: radial-gradient(18% 28% at 24% 50%, #CEFAFFFF 7%, #073AFF00 100%),
+                              radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),
+                              radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, #073AFF00 100%),
+                              radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),
+                              radial-gradient(42% 53% at 34% 72%, #FFFFFFFF 7%, #073AFF00 100%),
+                              radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),
+                              radial-gradient(31% 43% at 7% 98%, #FFFFFFFF 24%, #073AFF00 100%),
+                              radial-gradient(21% 37% at 72% 23%, #D3FF6D9C 24%, #073AFF00 100%),
+                              radial-gradient(35% 56% at 91% 74%, #8A4FFFF5 9%, #073AFF00 100%),
+                              radial-gradient(74% 86% at 67% 38%, #6DFFAEF5 24%, #073AFF00 100%),
+                              linear-gradient(125deg, #4EB5FFFF 1%, #4C00FCFF 100%);">PM</span>
+        </div>
+    </main>
+
+
+
+    <script>
+        //target my element//
+        const hour = document.getElementById('hour')
+        const min = document.getElementById('minute')
+        const sec = document.getElementById('second')
+        const ampm = document.getElementById('time')
+        const mls = document.getElementById('millisec')
+
+
+        function updateTime(){
+            const h = new Date().getHours()
+            const m = new Date().getMinutes()
+            const s = new Date().getSeconds()
+            const ms = new Date().getMilliseconds()
+            
+            hour.textContent = h > 12 ? `0${h - 12}` : h
+            min.textContent = m 
+            sec.textContent = s < 10 ? `0${s}` :s
+            ampm.textContent = h < 12 ? "AM" : "PM"
+            mls.textContent = ms
+
+            setTimeout(() => updateTime(), 100)
+        }
+
+        updateTime()
+    </script>
+</body>
+</html>
